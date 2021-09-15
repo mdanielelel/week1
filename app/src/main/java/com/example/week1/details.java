@@ -20,17 +20,30 @@ public class details extends AppCompatActivity {
 
         imageViewedit = findViewById(R.id.imageView);
         imageViewdelete = findViewById(R.id.imageView);
+        imageButton2 = findViewById(R.id.imageButton);
 
         imageViewdelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ) }
+                Intent intent = new Intent(getBaseContext(),add.class);
+                startActivity(intent);
+            }
         });
 
         imageViewedit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ) }
+                Intent intent = new Intent(getBaseContext(),add.class);
+                startActivity(intent);
+            }
+        });
+
+        imageButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(),MainActivity.class);
+                startActivity(intent);
+            }
         });
     }
 }
